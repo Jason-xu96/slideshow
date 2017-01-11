@@ -1,28 +1,27 @@
-var picIndex = 1;
+var slideIndex = 1;
 
-display(picIndex);
+display(slideIndex);
 
 function changeDisplay(n)
 {
-  picIndex += n;
-  display(picIndex);
+  slideIndex += n;
+  display(slideIndex);
 }
 
 function display(currIndex)
 {
   var i;
-  var allPics = document.getElementsByClassName("myPics");
-  var allTexts = document.getElementsByClassName("text");
+  var allSlides = document.getElementsByClassName("slide");
 
-  if(currIndex > allPics.length) {picIndex = 1;}
-  if(currIndex < 1){picIndex = allPics.length;}
+  if(currIndex > allSlides.length) {slideIndex = 1;}
+  if(currIndex < 1){slideIndex = allSlides.length;}
 
-  for(i=0;i<allPics.length;i++)
+  for(i=0;i<allSlides.length;i++)
   {
-    allPics[i].style.display = "none";
-    allTexts[i].style.display= "none";
+    allSlides[i].style.display = "none";
+
   }
 
-  allPics[picIndex-1].style.display = "block";
-  allTexts[picIndex-1].style.display = "block";
+  allSlides[slideIndex-1].style.display = "block";
+
 }

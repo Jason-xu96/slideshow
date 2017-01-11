@@ -1,6 +1,15 @@
-h1{ text-align: center; }
+h1
+{
+  text-align: center;
+  color: white;
+}
 
-img.myPics
+body
+{
+  background-color: black;
+}
+
+.slide img
 {
   display: block;
   margin-left: auto;
@@ -9,15 +18,24 @@ img.myPics
   width: 180px;
 }
 
-.text
+.slide p
 {
   font-size: 20px;
   text-align: center;
   bottom: 8px;
+  color: white;
 }
 
 .button
 {
   font-size: 32px;
   font-weight:900;
+  color: white;
+  cursor: pointer;
+}
+
+footer
+{
+  margin-top: 80px;
+  color: white;
 }
